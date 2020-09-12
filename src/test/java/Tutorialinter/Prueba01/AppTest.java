@@ -28,7 +28,7 @@ public class AppTest
     public void Caso1Login()
     {
     	
-    	assertTrue(true);
+    	assertTrue(false);
     	
     /*	File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);  
 		try {
