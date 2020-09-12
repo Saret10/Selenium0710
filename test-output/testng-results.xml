@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-09-12T14:29:30Z" name="Default suite" finished-at="2020-09-12T14:29:33Z" duration-ms="3281">
+    <groups>
+    </groups>
+    <test started-at="2020-09-12T14:29:30Z" name="Default test" finished-at="2020-09-12T14:29:33Z" duration-ms="3281">
+      <class name="Tutorialinter.Prueba01.AppTest">
+        <test-method signature="Caso1Login()[pri:0, instance:Tutorialinter.Prueba01.AppTest@4310d43]" started-at="2020-09-12T09:29:32Z" name="Caso1Login" finished-at="2020-09-12T09:29:33Z" duration-ms="607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Caso1Login -->
+      </class> <!-- Tutorialinter.Prueba01.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
