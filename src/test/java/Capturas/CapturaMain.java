@@ -26,31 +26,24 @@ public class CapturaMain {
 
 	public static void main(String[] args) throws IOException, Exception  {
 
-		GeneracionEvidencias NuevaGeneracionEvidencias = new GeneracionEvidencias();
+		//GeneracionEvidencias NuevaGeneracionEvidencias = new GeneracionEvidencias();
 		//NuevaGeneracionEvidencias.GeneraArchivo();
 		//NuevaGeneracionEvidencias.AñadeImagen();
 		
-<<<<<<< HEAD
-		File carpeta = new File("C:\\Saret\\Selenium\\Capturas de pantalla"); 
-		File[] lista = carpeta.listFiles();
-					
-=======
-		//File carpeta = new File("C:\\Saret\\Selenium\\Capturas de pantalla"); 
+	//	File carpeta = new File("C:\\Saret\\Selenium\\Capturas de pantalla"); 
 		//File[] lista = carpeta.listFiles();
-		
-				
->>>>>>> branch 'master' of https://github.com/Saret10/Selenium0710.git
+					
 		//System.out.println("\n Hay " +  lista.length + " elementos");
 	//	System.out.println("Que hay" + lista.length);
 	
 
 		//Creamos el documento
-		XWPFDocument templete = new XWPFDocument();
+		/*XWPFDocument templete = new XWPFDocument();
 		XWPFParagraph par =  templete.createParagraph();
 	    XWPFRun run = par.createRun();
 	    run.setText("EVIDENCIAS DE AUTOMATIZACION");
 	    run.setFontSize(13);
-	    /*
+	    
 	    InputStream pic = new FileInputStream("C:\\Saret\\Selenium\\Capturas de pantalla\\ima3.png");
 	    run.addPicture(pic, Document.PICTURE_TYPE_PNG, "1", Units.toEMU(500), Units.toEMU(200));
 	    FileOutputStream out = new FileOutputStream("C:\\Saret\\Selenium\\Capturas de pantalla\\Evidencia.doc");
