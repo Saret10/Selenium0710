@@ -26,18 +26,15 @@ public class CapturaMain {
 
 	public static void main(String[] args) throws IOException, Exception  {
 
-		//GeneracionEvidencias NuevaGeneracionEvidencias = new GeneracionEvidencias();
+		GeneracionEvidencias NuevaGeneracionEvidencias = new GeneracionEvidencias();
 		//NuevaGeneracionEvidencias.GeneraArchivo();
 		//NuevaGeneracionEvidencias.AñadeImagen();
 		
-		//File carpeta = new File("C:\\Saret\\Selenium\\Capturas de pantalla"); 
+		File carpeta = new File("C:\\Saret\\Selenium\\Capturas de pantalla"); 
 		File[] lista = carpeta.listFiles();
-		
-				
+					
 		//System.out.println("\n Hay " +  lista.length + " elementos");
 	//	System.out.println("Que hay" + lista.length);
-		
-		   
 	
 
 		//Creamos el documento
