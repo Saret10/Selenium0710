@@ -30,9 +30,16 @@ public class CapturaMain {
 		//NuevaGeneracionEvidencias.GeneraArchivo();
 		//NuevaGeneracionEvidencias.AñadeImagen();
 		
+<<<<<<< HEAD
 		File carpeta = new File("C:\\Saret\\Selenium\\Capturas de pantalla"); 
 		File[] lista = carpeta.listFiles();
 					
+=======
+		//File carpeta = new File("C:\\Saret\\Selenium\\Capturas de pantalla"); 
+		//File[] lista = carpeta.listFiles();
+		
+				
+>>>>>>> branch 'master' of https://github.com/Saret10/Selenium0710.git
 		//System.out.println("\n Hay " +  lista.length + " elementos");
 	//	System.out.println("Que hay" + lista.length);
 	
