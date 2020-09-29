@@ -33,7 +33,7 @@ public class CapturaMain {
 		File carpeta = new File("C:\\Saret\\Selenium\\Capturas de pantalla"); 
 		File[] lista = carpeta.listFiles();
 					
-		//System.out.println("\n Hay " +  lista.length + " elementos");
+		System.out.println("\n Hay " +  lista.length + " elementos");
 	//	System.out.println("Que hay" + lista.length);
 	
 
