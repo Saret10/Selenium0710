@@ -1,20 +1,18 @@
 package Tutorialinter.Prueba01;
 import java.io.File;
+import java.io.IOException;
 import java.nio.file.Paths;
 
-
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-
-/**
- * Hello world!
- *
- */
 
 public class App 
 {
@@ -22,12 +20,16 @@ public class App
     public static void main( String[] args )
     {
        
-      System.out.println( "Hello World!" );
+
         String exePath = Paths.get("").toAbsolutePath().toString() + File.separator + "Driver" + File.separator; //le dice de donde tomar la ruta del proyecto
         System.setProperty("webdriver.chrome.driver", exePath + "chromedriver.exe"); //establece la propiedad del . exe
-        WebDriver driver = new ChromeDriver(); //inicializa driver
+        WebDriver driver;
+        driver= new ChromeDriver(); //inicializa driver
        
-        
+        //String exePath = Paths.get("").toAbsolutePath().toString() + File.separator + "Driver" + File.separator;
+	   // System.setProperty("webdriver.chrome.driver", exePath + "chromedriver.exe"); //establece la propiedad del . exe
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Saret\\eclipse-workspace\\Prueba01\\Driver\\chromedriver.exe");
+		
        //driver.get("https://www.cooltesters.com"); //iniciar chrome en la URL especificada
        //driver.manage().window().maximize();
       // By element = By.id("home_buttonText1");
@@ -37,10 +39,26 @@ public class App
        //driver.close();
        //driver.quit();
         
-        
+	    /*	File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);  
+			try {
+				FileUtils.copyFile(scrFile, new File("C:\\Saret\\Selenium\\Capturas de pantalla\\ima.png"));
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}*/	
+		
+        /* File screenshot = ((TakesScreenshot) driver)
+		   .getScreenshotAs(OutputType.FILE);
+		   try {
+			FileUtils.copyFile(screenshot, new File("Caso1Login"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
+		
        // Practica de login Mary Kay LOGIN
        
-     /* driver.get("https://www.marykayintouch.com.mx/Login/Login.aspx?ReturnURL=%2f");
+        driver.get("https://www.marykayintouch.com.mx/Login/Login.aspx?ReturnURL=%2f");
         driver.manage().window().maximize();
         
         
@@ -50,13 +68,22 @@ public class App
         WebElement txtPass =	driver.findElement(By.name("txtPassword"));
         txtPass.sendKeys("Martinez7");
         
-        Actions actions = new Actions(driver);
+       // Actions actions = new Actions(driver);
         
         WebElement  btnSub=	driver.findElement(By.id("btnSubmit"));
         //actions.moveToElement(btnSub).build().perform();
         btnSub.click();
         
-        WebElement  MoverMouse=	driver.findElement(By.id("Header_Nav_LinkSection_0"));
+    
+       File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); 
+    			try {
+    				FileUtils.copyFile(scrFile, new File("C:\\Saret\\Selenium\\Capturas de pantalla\\ima1.png"));
+    			} catch (IOException e) {
+    				// TODO Auto-generated catch block
+    				e.printStackTrace();
+    			}
+        }
+        /*WebElement  MoverMouse=	driver.findElement(By.id("Header_Nav_LinkSection_0"));
         //MoverMouse.click();
         actions.moveToElement(MoverMouse).perform();
         
@@ -161,5 +188,5 @@ public class App
         	
         
         
-}
+
 }

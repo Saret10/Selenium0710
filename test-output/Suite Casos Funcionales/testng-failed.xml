@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite Casos Funcionales]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="PaqueteListener.ListenerDos"/>
+  </listeners>
+  <test name="Test1(failed)">
+    <classes>
+      <class name="Tutorialinter.Prueba01.AppTest">
+        <methods>
+          <include name="CargarPagina"/>
+          <include name="CerrarNavegador"/>
+          <include name="Caso1Login"/>
+        </methods>
+      </class> <!-- Tutorialinter.Prueba01.AppTest -->
+      <class name="Tutorialinter.Prueba01.AppTest3">
+        <methods>
+          <include name="CerrarNavegador"/>
+          <include name="CargarPagina"/>
+        </methods>
+      </class> <!-- Tutorialinter.Prueba01.AppTest3 -->
+      <class name="Tutorialinter.Prueba01.AppTest2">
+        <methods>
+          <include name="CerrarNavegador"/>
+          <include name="CargarPagina"/>
+        </methods>
+      </class> <!-- Tutorialinter.Prueba01.AppTest2 -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite Casos Funcionales] -->

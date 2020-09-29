@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite Casos Funcionales">
+
+
+	<listeners>
+		<listener class-name="PaqueteListener.ListenerDos">
+		</listener>
+	</listeners>
+
+	<test name="Test1">
+		<classes>
+			<class name="Tutorialinter.Prueba01.AppTest" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Test2">
+		<classes>
+			<class name="Tutorialinter.Prueba01.AppTest2" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Test3">
+		<classes>
+			<class name="Tutorialinter.Prueba01.AppTest3" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
