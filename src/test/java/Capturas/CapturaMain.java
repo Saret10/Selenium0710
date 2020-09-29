@@ -38,12 +38,12 @@ public class CapturaMain {
 	
 
 		//Creamos el documento
-		/*XWPFDocument templete = new XWPFDocument();
+		XWPFDocument templete = new XWPFDocument();
 		XWPFParagraph par =  templete.createParagraph();
 	    XWPFRun run = par.createRun();
 	    run.setText("EVIDENCIAS DE AUTOMATIZACION");
 	    run.setFontSize(13);
-	    
+	    /*
 	    InputStream pic = new FileInputStream("C:\\Saret\\Selenium\\Capturas de pantalla\\ima3.png");
 	    run.addPicture(pic, Document.PICTURE_TYPE_PNG, "1", Units.toEMU(500), Units.toEMU(200));
 	    FileOutputStream out = new FileOutputStream("C:\\Saret\\Selenium\\Capturas de pantalla\\Evidencia.doc");
