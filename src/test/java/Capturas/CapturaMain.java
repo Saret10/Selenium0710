@@ -31,7 +31,7 @@ public class CapturaMain {
 		//NuevaGeneracionEvidencias.AñadeImagen();
 		
 		//File carpeta = new File("C:\\Saret\\Selenium\\Capturas de pantalla"); 
-		File[] lista = carpeta.listFiles();
+		//File[] lista = carpeta.listFiles();
 		
 				
 		//System.out.println("\n Hay " +  lista.length + " elementos");
